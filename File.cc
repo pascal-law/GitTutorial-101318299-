@@ -11,11 +11,13 @@ bool File::lessThan(Date& d) {
 }
 
 void File::print() {
-	cout << name << ", last modified: ";
+	cout << "File name: " << name << endl;
+	cout << "Last modified date: " ;
 	date.print();
 	cout << endl;
 }
 
 void File::printContents() {
-	cout << content << endl;
+	print();
+	cout << "Content: " << content << endl;
 }
