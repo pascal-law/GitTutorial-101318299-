@@ -1,7 +1,6 @@
 #include "File.h"
 
 File::File(string name, string content, Date& date) {
-	cout << "constructor" << endl;
 	fileName = name;
 	fileContent = content;
 	fileDate = date;
