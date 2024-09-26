@@ -17,9 +17,9 @@ class File {
 		void printContents();
 
 	private:
-		string fileName;
-		string fileContent;
-		Date fileDate;
+		string name;
+		string content;
+		Date date;
 };
 
 #endif
