@@ -1,4 +1,3 @@
-
 #include "Date.h"
 
 Date::Date(){
@@ -107,4 +106,3 @@ int Date::getMaxDay() {
 		default:			return 31;
 	}
 }
-
