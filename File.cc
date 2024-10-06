@@ -1,17 +1,28 @@
 #include "File.h"
 
-File::File(string name, string content, Date& date) {
+File::File() {
+	this->name = "";
+	this->content = "";
+	this->date = Date();
+}
+
+
+File::File(const string& name, const string& content, Date& date) {
 	this->name = name;
 	this->content = content;
 	this->date = date;
 }
 
-bool File::lessThan(Date& d) {
-	return date.lessThan(d);
+const string& File::getName() { return name; }
+
+Date File::getDate() { return date; }
+
+bool File::lessThan(File& f) {
+	return date.lessThan(f.date);
 }
 
 void File::print() {
-	cout << "File name: " << name << endl;
+	cout << "File: " << name << endl;
 	cout << "Last modified: " ;
 	date.print();
 	cout << endl;
